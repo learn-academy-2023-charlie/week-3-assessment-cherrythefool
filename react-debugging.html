@@ -63,13 +63,19 @@
           padding: "10px"
         }
         // No need to change anything ABOVE this line ^
+        
+        // lines 73, 90 - added JSX frags 
+        // line 75 - added drawCard functionality for draw card button onClick attribute
+        // line 78 - capitalized "C" in shuffle button onClick attribute
+
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}> 
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,6 +87,7 @@
               )
             })}
           </div>
+          </>
         )
       }
 
